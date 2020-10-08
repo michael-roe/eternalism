@@ -11,6 +11,79 @@ Bruce Christianson \\
 
 \maketitle
 
+In this article, we will apply some concepts from Buddhist philosophy
+(particulary anti-eternalism and ego fixation) to the problems
+that are encountered when large teams of computer programmers
+attempt to write very large computer programs, such as operating
+systems. As readers of this paper may not be familiar with either
+or both of these areas, we will attempt to explain matters in a way
+that is accessible to a non-specialist reader. It will also lead
+us to refer to a very diverse bibliography, from Machig Labdron (a
+woman philosopher who lived in Tibet in the 11th century) to
+Fred Brook's memoir of his time working as manager at IBM during
+the development of the operating system OS360. At this point,
+a reader who is familiar with Machig Labdron may wonder how we
+are going to move the philosophical argument from human corpses
+being devoured by vultures in Machig Labdron on to Fred Brook's
+OS360,
+and whether it might involve OS360 being devoured by vultures,
+metaphorically if not literally.
+
+
+****
+
+According to Jaron Lanier, writing a small computer program of
+a few dozen lines is a pleasant xperience, but working on really large
+computer programs is horrible. Readers who are not computer programmers
+may wonder is these computer programs are really as large as all
+that, or whether we are engaging in rhetorical exaggeration.
+The detailed numbers for Microsoft Windows (for example) may not be o
+publically available, so here I will give the figures from a software
+system that is snaller, but still large enough to potentially present
+an unpleasant experience to anyone working on it. These numbers
+are taken from the CHERI project, a devlopment of a microprocessor
+chip with added security features, funded in part by the DARPA, 
+the U.S. Defense Advanced Research Projects Agency.
+
+***
+
+
+According to Perdita Stevens, compilers are highly reliable pieces
+of software, and if you a wondering whether the reason your program
+doesn't work as you expect is an error in your own program or an
+error in the compiler, the error is almost certainly in your own
+program. This is excellent advice for beginning students who are
+writing small computer programs as described by Jaron Lanier,
+especially if the compiler and the CPU chip you are using is
+of a type used by many other people. If there was an error in the
+compiler, someone else would have complained about it already
+and it would have been fixed\footnote{This is unduly optimistic}.
+Stevens then goes on to add that this is not true if you also
+making chnages to the compiler.
+
+When working with experimental CPUs, the reason your program does
+not work could be anywhere. It could be your program. It could be the i
+compiler. It could
+be in the chip design. It could be in the other compiler that
+ the chip design into an electronic circuit.
+
+Outline of the next bit: ``Government Furnished Equipment'' RISC-V
+CPU design used in a friendly challenge in which DARPA invited
+members of the public to try to break the security of a prototype
+electronic voting terminal. (For the benefit of readers from 
+countries like the UK where government elections are carried out
+with paper ballot forms; some places in the United States use
+a system where the voter pushes a button on a computer to vote
+for one candidate or another. The concern here is that an error
+somewhere in all those many many lines of computer code could
+allow a suitable malicious person to trick the computer into
+changing the result of who won the election).
+
+(Description of bug)
+
+At this point, we will return to Machig Labdron. According to
+Machig, demons do not exist.
+
 \cite{*}
 
 \bibliographystyle{plain}
